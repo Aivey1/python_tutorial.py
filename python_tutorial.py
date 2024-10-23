@@ -1,34 +1,39 @@
-# This is my first Python program.
-# It will print a message, ask if you're ready, ask for your name, and ask a fun question before saying goodbye.
+# *** Welcome to the Python Tutorial by Al ***
+# In this tutorial, we are going to learn the 'print' command in Python and how to use variables.
+# We will also take user input and display it back to the screen using the 'print' command.
+# Let's get started!
 
-# Print a welcome message to the screen
-print("Hello, World!")
+# This line prints a welcome message to the user
+print("*** Welcome to Learn Python: The 'Print' Command Tutorial ***")
 
-# Ask the user if they are ready to continue
-ready = input("Are you ready to continue? (Y/N): ")
+# Asking the user if they're ready to learn
+ready = input("Are you ready to learn? (Y/N): ")  # User input stored in 'ready' variable
 
-# Check if the user typed 'Y' or 'N'
-if ready == "Y":
-    # If the user typed 'Y', print a message and continue
-    print("Great! Let's keep going!")
-elif ready == "N":
-    # If the user typed 'N', print a message and stop
-    print("Okay, maybe next time!")
-else:
-    # If the user typed something other than 'Y' or 'N', still continue
-    print("You didn't type Y or N, but let's continue anyway!")
+# Displaying what the user answered
+print(f"You answered: {ready}")
 
-# Ask the user for their name and store it in a variable called 'name'
-name = input("What's your name? ")
+# Asking the user what they think the 'print' command does
+guess = input("What do you think the 'print' command does? ")  # User's guess stored in 'guess' variable
 
-# Print a greeting using the name the user typed
-print("Hi, " + name + "! Nice to meet you!")
+# Responding to the user after their guess
+print("Okay, times up!")
+print(f"If you thought '{guess}' was the right answer, that's a good guess!")
 
-# Ask the user a fun question (favorite color)
-color = input("What's your favorite color? ")
+# Displaying the correct answer
+print("In Python, the 'print' command displays text or data on the screen.")
 
-# Print a response using their favorite color
-print("Wow! " + color + " is a really nice color!")
+# Showing the syntax of the 'print' command
+print("----------------------------------------")
+print('Here is the syntax for the "print" command in Python:')
+print('print("Text to display on the screen.")')
+print("----------------------------------------")
 
-# End the program with a goodbye message that includes the user's name
-print("Goodbye, " + name + "! Have a great day!")
+# Showing an example of using the 'print' command
+print('Example: Let\'s print the phrase "Python is fun!"')
+print('print("Python is fun!")')
+print("The result will be displayed as:")
+print("Python is fun!")  # This will print the phrase Python is fun!
+
+# Wrapping up the tutorial
+print("----------------------------------------")
+print("End of Tutorial... Have a great day learning Python!")
